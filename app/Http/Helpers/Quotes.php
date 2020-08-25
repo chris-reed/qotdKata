@@ -45,6 +45,7 @@ class Quotes
 
     /**
      * Load a new set of quotes
+     * if the given array matches the proper format
      * @param array $new_quotes
      * @return bool
      */
