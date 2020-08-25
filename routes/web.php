@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'QuotesController@index');
+Route::prefix('quotes')->group(function () {
+    Route::get('quotd/{d?}','QuotesController@quotd' );
+    Route::get('random','QuotesController@random' );
+    Route::get('search/{t?}','QuotesController@search' );
 });

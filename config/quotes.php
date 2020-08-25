@@ -7,7 +7,7 @@ return [
     | From https://github.com/aprilmintacpineda/super-quotes/blob/master/raw/dmakk767.json
     |--------------------------------------------------------------------------
     */
-    'quotes' => [
+
         [
             'text' => 'Life isn’t about getting and having, it’s about giving and being.',
             'author' => 'Kevin Kruse'
@@ -168,5 +168,4 @@ return [
             'text' => 'Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.',
             'author' => 'Booker T. Washington'
         ],
-    ]
 ];

@@ -68,7 +68,7 @@ class Quotes
      * @param mixed $date
      * @return array
      */
-    public function qotd($date = null)
+    public function quotd($date = null)
     {
         $format = 'Y-m-d';
         // set quote as today's quote
@@ -110,6 +110,9 @@ class Quotes
                     array_push($results, $quote);
                 }
             }
+        }
+        if(count($results) < 1){
+            $results = ['message' => "No results found for '$term' "];
         }
         return $results;
 
